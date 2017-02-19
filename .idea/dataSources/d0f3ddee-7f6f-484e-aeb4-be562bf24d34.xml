@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - movieDatabase@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="movieDatabase">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="BookLibrary"/>
+    <schema id="3" name="company"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="movieInfoDatabase"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="OnlineShop"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="spring_security_app"/>
+    <schema id="10" name="testDatabase"/>
+    <schema id="11" name="testDatabaseImages"/>
+    <table id="12" parent="1" name="movie"/>
+    <column id="13" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="14" parent="12" name="nameRussian">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="15" parent="12" name="nameOriginal">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="16" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
